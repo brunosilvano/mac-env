@@ -5,6 +5,12 @@
 # Dock > Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
+# Dock > Position right
+defaults write com.apple.dock orientation -string "right"
+
+# Dock > Size:
+defaults write com.apple.dock tilesize -int 128
+
 
 ################################################################################
 # System Preferences > Keyboard
