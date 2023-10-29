@@ -29,3 +29,8 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # Tracking Speed: from 0 to 3
 defaults write -g com.apple.trackpad.scaling -float 3
+
+# Kill affected apps
+for app in "Dock" "Finder"; do
+  killall "${app}" > /dev/null 2>&1
+done
